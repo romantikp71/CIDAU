@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>CIDAU - CENTRO INTERNACIONAL DE ADMISIN UNIVERSITARIA</title>
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1" />
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<script src="js/ios-orientationchange-fix.min.js"></script>
+	<style>
+	body {
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	div {
+		width: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	</style>
+</head>
+<body>
+<div>
+	<img src="images/bg.jpg" width="1024" height="768" usemap="#cidaumain" alt=">CIDAU - CENTRO INTERNACIONAL DE ADMISIN UNIVERSITARIA" />
+	<map name="cidaumain">
+		<area shape="rect" coords="30,30,330,150" href="https://es.estudiareuropa.com/" title="CIDAU" alt=">CIDAU - CENTRO INTERNACIONAL DE ADMISIN UNIVERSITARIA" />
+		<area shape="rect" coords="185,340,330,530" href="https://es.estudiareuropa.com/" title="Columbia" alt="Columbia" />
+		<area shape="rect" coords="720,340,870,530" href="https://es.estudiareuropa.com/" title="Ecuador" alt="Ecuador" />
+		<area shape="rect" coords="185,600,870,750" href="https://es.estudiareuropa.com/" title="Other Country" alt="Other Country" />
+	</map>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+});
+</script>
+</body>
+</html>
